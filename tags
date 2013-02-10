@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Application	./config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Rottenpotatoes
+ApplicationController	./app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	./app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateMovies	./db/migrate/20111119180638_create_movies.rb	/^class CreateMovies < ActiveRecord::Migration$/;"	c
+HtmlSelectorsHelpers	./features/support/selectors.rb	/^module HtmlSelectorsHelpers$/;"	m
+Movie	./app/models/movie.rb	/^class Movie < ActiveRecord::Base$/;"	c
+MoviesController	./app/controllers/movies_controller.rb	/^class MoviesController < ApplicationController$/;"	c
+MoviesHelper	./app/helpers/movies_helper.rb	/^module MoviesHelper$/;"	m
+NavigationHelpers	./features/support/paths.rb	/^module NavigationHelpers$/;"	m
+Rottenpotatoes	./config/application.rb	/^module Rottenpotatoes$/;"	m
+WithinHelpers	./features/step_definitions/web_steps.rb	/^module WithinHelpers$/;"	m
+about	./public/index.html	/^      function about() {$/;"	f
+all_ratings	./app/models/movie.rb	/^  def self.all_ratings$/;"	F	class:Movie
+create	./app/controllers/movies_controller.rb	/^  def create$/;"	f	class:MoviesController
+destroy	./app/controllers/movies_controller.rb	/^  def destroy$/;"	f	class:MoviesController
+down	./db/migrate/20111119180638_create_movies.rb	/^  def down$/;"	f	class:CreateMovies
+edit	./app/controllers/movies_controller.rb	/^  def edit$/;"	f	class:MoviesController
+index	./app/controllers/movies_controller.rb	/^  def index$/;"	f	class:MoviesController
+new	./app/controllers/movies_controller.rb	/^  def new$/;"	f	class:MoviesController
+oddness	./app/helpers/movies_helper.rb	/^  def oddness(count)$/;"	f	class:MoviesHelper
+path_to	./features/support/paths.rb	/^  def path_to(page_name)$/;"	f	class:NavigationHelpers
+selector_for	./features/support/selectors.rb	/^  def selector_for(locator)$/;"	f	class:HtmlSelectorsHelpers
+show	./app/controllers/movies_controller.rb	/^  def show$/;"	f	class:MoviesController
+up	./db/migrate/20111119180638_create_movies.rb	/^  def up$/;"	f	class:CreateMovies
+update	./app/controllers/movies_controller.rb	/^  def update$/;"	f	class:MoviesController
+with_scope	./features/step_definitions/web_steps.rb	/^  def with_scope(locator)$/;"	f	class:WithinHelpers

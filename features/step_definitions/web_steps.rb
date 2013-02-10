@@ -252,3 +252,39 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+# ---------------------------------------------
+
+When /^I check 'PG' rating$/ do
+  check('ratings_PG')
+end
+
+When /^I check 'R' rating$/ do
+  check('ratings_R')
+end
+
+When /^I uncheck 'G' rating$/ do
+  uncheck('ratings_G')
+end
+
+When /^I uncheck 'PG-13' rating$/ do
+  uncheck('ratings_PG-13')
+end
+
+When /^I press submit$/ do
+  click_button('ratings_submit')
+end
+
+Then /^I should see movies with 'PG' and 'R' ratings$/ do
+  within('tbody') do
+    page.text.should match(/^R$/)
+    page.text.should match(/^PG$/)
+  end
+end
+
+Then /^I should not see movies with 'PG-13' and 'G' ratings\.$/ do
+  within('td') do
+    page.text.should_not have_content('PG-13$')
+    page.text.should_not have_content('G')
+  end
+end
