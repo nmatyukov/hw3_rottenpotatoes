@@ -1,0 +1,56 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1360466586.8140376:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%98916ce2f731f4e48d619f128fee3f1eI"logical_path;
+FI"application.js;
+TI"pathname;
+FI"0$root/app/assets/javascripts/application.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2013-02-10T03:34:30+04:00;
+FI"	body;
+FI"”// This is a manifest file that'll be compiled into including all the files listed below.
+// Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
+// be included in the compiled file accessible from http://example.com/assets/application.js
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// the compiled file.
+//
+;
+;
+FI"asset_paths;
+F[I"f/home/quant/.rvm/gems/ruby-1.9.3-p286/gems/jquery-rails-2.1.1/vendor/assets/javascripts/jquery.js;
+FI"j/home/quant/.rvm/gems/ruby-1.9.3-p286/gems/jquery-rails-2.1.1/vendor/assets/javascripts/jquery_ujs.js;
+FI"0$root/app/assets/javascripts/application.js;
+FI"dependency_paths;
+F[	{I"	path;
+FI"0$root/app/assets/javascripts/application.js;
+FI"
+mtime;
+FIu:	Time7E€«…\
+:@_zoneI"MSK;
+T:nano_numid:nano_deni:submicro"	P:offseti@8I"hexdigest;
+F"%0f1cfbc0bc3803a9dbf1a44d1da6ff92{I"	path;
+FI"!$root/app/assets/javascripts;
+FI"
+mtime;
+FIu;7E€«…\
+;I"MSK;
+T;id;i;"	P;i@8I"hexdigest;
+F"%9fc91fc75938cd11a57805188f2a2260{I"	path;
+FI"f/home/quant/.rvm/gems/ruby-1.9.3-p286/gems/jquery-rails-2.1.1/vendor/assets/javascripts/jquery.js;
+FI"
+mtime;
+FIu;7E€ \â‰
+;I"MSK;
+T;i>;i;"p;i@8I"hexdigest;
+F"%a972cfe4e85bb47d39f9e015cbbd8ab1{I"	path;
+FI"j/home/quant/.rvm/gems/ruby-1.9.3-p286/gems/jquery-rails-2.1.1/vendor/assets/javascripts/jquery_ujs.js;
+FI"
+mtime;
+FIu;7E€ \â‰
+;I"MSK;
+T;i>;i;"p;i@8I"hexdigest;
+F"%274bf67ebc042c9f3e848baba8b36eddI"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

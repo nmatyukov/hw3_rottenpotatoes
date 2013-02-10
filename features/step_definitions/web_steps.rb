@@ -43,6 +43,8 @@ end
 
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
+  
+  @value = page.all('tbody tr').count
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|
@@ -263,6 +265,18 @@ When /^I check 'R' rating$/ do
   check('ratings_R')
 end
 
+When /^I check 'G' rating$/ do
+  check('ratings_G')
+end
+
+When /^I check 'PG-13' rating$/ do
+  check('ratings_PG-13')
+end
+
+When /^I check 'NC-17' rating$/ do
+  check('ratings_NC-17')
+end
+
 When /^I uncheck 'G' rating$/ do
   uncheck('ratings_G')
 end
@@ -271,15 +285,27 @@ When /^I uncheck 'PG-13' rating$/ do
   uncheck('ratings_PG-13')
 end
 
+When /^I uncheck 'PG' rating$/ do
+  uncheck('ratings_PG')
+end
+
+When /^I uncheck 'R' rating$/ do
+  uncheck('ratings_R')
+end
+
+When /^I uncheck 'NC-17' rating$/ do
+  uncheck('ratings_NC-17')
+end
+
 When /^I press submit$/ do
   click_button('ratings_submit')
 end
 
 Then /^I should see movies with 'PG' and 'R' ratings$/ do
-  within('tbody') do
+  # within('tbody') do
     page.text.should match(/^R$/)
     page.text.should match(/^PG$/)
-  end
+  # end
 end
 
 Then /^I should not see movies with 'PG-13' and 'G' ratings\.$/ do
@@ -288,3 +314,12 @@ Then /^I should not see movies with 'PG-13' and 'G' ratings\.$/ do
     page.text.should_not have_content('G')
   end
 end
+
+Then /^I should see all movies$/ do
+    page.text.should match(/^R$/)
+    page.text.should match(/^PG$/)
+    page.text.should match(/^PG-13$/)
+    page.text.should match(/^NC-17$/)
+    page.all('tbody tr').count.should == @value 
+end
+
